@@ -1,9 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import {RouterProvider, createBrowserRouter} from "react-router-dom"
-import RootLyout from './layouts/rootlayout/RootLyout.jsx'
+import RootLayout from './layouts/rootlayout/RootLayout.jsx'
 import HomePage from './routes/homepage/HomePage.jsx'
 import DashboardLayout from './layouts/dashboardlayout/DashboardLayout.jsx'
 import DashboardPage from './routes/dashboardpage/DashboardPage.jsx'
@@ -14,7 +13,7 @@ import signUpPage from './routes/signuppage/signUpPage.jsx'
 
 const router = createBrowserRouter([
   {
-    element: <RootLyout/>,
+    element: <RootLayout/>,
     children:[
       {
         element:<HomePage/>,
